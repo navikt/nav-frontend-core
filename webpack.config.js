@@ -1,5 +1,5 @@
 const path = require("path");
-var stylesPath = path.resolve(__dirname, 'less', 'styles.less');
+var stylesPath = path.resolve(__dirname, 'less', 'eksempel.less');
 var mainPath = path.resolve(__dirname, 'index.js');
 
 module.exports = {
