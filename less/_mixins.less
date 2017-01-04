@@ -1,3 +1,29 @@
+.mixin-lenke() {
+    color: @lenkeBlaa;
+    border-bottom: 1px solid @ikonGraa;
+    text-decoration: none;
+
+    &:visited {
+        color: @besoktLilla;
+        border-bottom-color: @besoktLilla;
+    }
+
+    &:active {
+        color: @aktivBlaa;
+    }
+
+    &:focus {
+        background-color: @fokusOrange;
+        color: @aktivBlaa;
+        border-bottom-color: @aktivBlaa;
+        outline: none;
+    }
+
+    &:hover {
+        border-bottom-color: @lenkeBlaa;
+    }
+}
+
 .mixin-transition(@varighet: 150ms, @type: all) {
     transition: @type @varighet cubic-bezier(0.465, 0.183, 0.153, 0.946);
 }
