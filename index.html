@@ -8,8 +8,27 @@
 </head>
 <body>
     <div id="nav-frontend-eksempel">
-        <p>Hello world</p>
-        <p>NAV-frontend-core v. 2 inneholder ikke lenger global styling av alle a-elementer. Det tilbys heller en mixin; .mixin-lenke(), som kan brukes på lenker.</p>
+        <p>NAV-frontend-core v. 2 inneholder globale variabler. </p>
+        <p>Lenker: Den inneholder ikke lenger global styling av alle a-elementer. Det tilbys i stedet følgende:
+        <ul>
+            <li>Mixin <code>.mixin-lenke(),</code> som gir riktig lenkestyling.
+            <li>Klassen <code>.lenke</code>, som kan extendes og/eller brukes på a-elementer. Extending med alle tilstander gjøres slik i less:
+                <pre>
+                    .brodsmuler a {
+                        &:extend(.lenke all);
+                    }
+                </pre>
+
+                <p>Output blir som følger:</p>
+                <pre>
+                    .lenke, .brodsmuler a {
+                        color: #0067c5
+                        /* etc */
+                    }
+                </pre>
+            </li>
+        </ul>
+        </p>
     </div>
     <script src="bundle.js"></script>
 </body>
