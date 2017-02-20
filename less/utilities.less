@@ -23,12 +23,20 @@
 // Toggling content
 // -------------------------
 
-// Note: Deprecated .hide in favor of .hidden or .sr-only (as appropriate) in v3.0.1
+
+// Hide from screenreaders and browsers
+//
+// Credit: HTML5 Boilerplate
+
 .hide {
   display: none !important;
 }
 .show {
   display: block !important;
+}
+
+.hidden {
+  display: none !important;
 }
 .invisible {
   visibility: hidden;
@@ -38,19 +46,9 @@
 }
 
 
-// Hide from screenreaders and browsers
-//
-// Credit: HTML5 Boilerplate
-
-.hidden {
-  display: none !important;
-}
-
-
 // For Affix plugin
 // -------------------------
 
 .affix {
   position: fixed;
 }
- 

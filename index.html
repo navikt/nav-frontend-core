@@ -7,29 +7,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 </head>
 <body>
-    <div id="nav-frontend-eksempel">
-        <p>NAV-frontend-core v. 2 inneholder globale variabler. </p>
-        <p>Lenker: Den inneholder ikke lenger global styling av alle a-elementer. Det tilbys i stedet følgende:
-        <ul>
-            <li>Mixin <code>.mixin-lenke(),</code> som gir riktig lenkestyling.
-            <li>Klassen <code>.lenke</code>, som kan extendes og/eller brukes på a-elementer. Extending med alle tilstander gjøres slik i less:
-                <pre>
-                    .brodsmuler a {
-                        &:extend(.lenke all);
-                    }
-                </pre>
+  <div class="container">
+<h1 class="typo-sidetittel">Test av core</h1>
+  <h2 class="typo-undertittel">Test av grid</h2>
+    <section class="container">
+        <div class="row">
+      <h3>
+      2x  col-xs-12 col-sm-6 col-lg-2
+      </h3>
 
-                <p>Output blir som følger:</p>
-                <pre>
-                    .lenke, .brodsmuler a {
-                        color: #0067c5
-                        /* etc */
-                    }
-                </pre>
-            </li>
-        </ul>
-        </p>
+        <div class="col-xs-12 col-sm-6 col-lg-2">First div
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-2">Second div
+        </div>
+      </div>
+      <div class="row">
+      <h3>
+        4x col-xs-6 col-sm-4 col-lg-2 (third hidden-xs)
+      </h3>
+      <div class="col-xs-6 col-sm-4 col-lg-2">First div
+      </div>
+      <div class="col-xs-6 col-sm-4 col-lg-2">Second div
+      </div>
+      <div class="col-xs-6 col-sm-4 col-lg-2 hidden-xs">Third div
+      </div>
+      <div class="col-xs-6 col-sm-4 col-lg-2">Fourth div
+      </div>
     </div>
+    <div class="row">
+      <h3>With offset - col-xs-8 col-xs-offset-1 col-sm-3 col-sm-offset-1</h3>
+      <div class="col-xs-5 col-xs-offset-1 col-sm-3 col-sm-offset-1">
+        Offset div 1
+      </div>
+      <div class="col-xs-5 col-xs-offset-1 col-sm-3 col-sm-offset-1">
+        Offset div 2
+      </div>
+      <div class="col-xs-5 col-xs-offset-1 col-sm-3 col-sm-offset-1">
+        Offset div 3
+      </div>
+      <div class="col-xs-5 col-xs-offset-1 col-sm-3 col-sm-offset-1">
+        Offset div 4
+      </div>
+    </div>
+  </section>
+</div>
     <script src="bundle.js"></script>
 </body>
 </html>
