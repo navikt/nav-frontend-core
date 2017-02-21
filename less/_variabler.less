@@ -1,50 +1,211 @@
-/* 
+/*
 ---------------
 FARGER
 ---------------
 */
 
 // Hovedfarger
-
-@hvit: #ffffff;
-@bakgrunnGraa: #efefef;
-@ikonGraa: #b7b1a9;
-@inaktivGraa: #7f756c;
-@navRoed: #c30000;
-@navTekst: #3e3832;
-@modiaSort: #333333;
-@advarselRoedBakgrunn: #f3e3e3;
+@white:#FFF;
+@redNav:#C30000;
+@grayBackground:#EFEFEF;
+@grayText:#3E3832;
+@grayIcon:#B7B1A9;
+@grayModia:#333333;
+@grayInactive:#7F756C;
+@pinkErrorBg:#F3E3E3;
 
 // Interaksjonsfarger
-
-@suksessGroenn: #06893a;
-@lenkeBlaa: #0067c5;
-@lenkeLyseblaa: #66CBEC;
-@aktivBlaa: #005b82;
-@besoktLilla: #634689;
-@advarselRoed: #ba3a26;
-@infoOrange: #ff9100;
-@fokusOrange: #ffbd66;
-
+@greenSuccess:#06893A;
+@mutedGreen:#A2AD00; // name will change
+@lightBlue:#66CBEC;
+@blueLink:#0067C5;
+@blueLinkActive:#005B82;
+@blueLinkVisited:#634689;
+@redError:#BA3A26;
+@orangeInfo:#FF9100;
+@orangeFocus:#FFBD66;
 
 // Tilleggsfarger
+// Går mot +#FFF respektive +#3E3832 i inkrement av 20%
+@greenSuccessLighten20:lighten(@greenSuccess, 20%);
+@greenSuccessLighten40:lighten(@greenSuccess, 40%);
+@greenSuccessLighten60:lighten(@greenSuccess, 60%);
+@greenSuccessLighten80:lighten(@greenSuccess, 80%);
 
+@greenSuccessDarken20:mix(@greenSuccess,#3E3832,80%);
+@greenSuccessDarken40:mix(@greenSuccess,#3E3832,60%);
+@greenSuccessDarken60:mix(@greenSuccess,#3E3832,40%);
+@greenSuccessDarken80:mix(@greenSuccess,#3E3832,20%);
 
+// change name!!!
+@mutedGreenLighten20:lighten(@mutedGreen,20%);
+@mutedGreenLighten40:lighten(@mutedGreen,40%);
+@mutedGreenLighten60:lighten(@mutedGreen,60%);
+@mutedGreenLighten80:lighten(@mutedGreen,80%);
+//change name!!!
+@mutedGreenDarken20:mix(@mutedGreen,#3E3832,80%);
+@mutedGreenDarken40:mix(@mutedGreen,#3E3832,60%);
+@mutedGreenDarken60:mix(@mutedGreen,#3E3832,40%);
+@mutedGreenDarken80:mix(@mutedGreen,#3E3832,20%);
 
-/* 
----------------
-FONTER
----------------
-*/
+@lightBlueLighten20:lighten(@lightBlue,20%);
+@lightBlueLighten40:lighten(@lightBlue,40%);
+@lightBlueLighten60:lighten(@lightBlue,60%);
+@lightBlueLighten80:lighten(@lightBlue,80%);
 
-@profilfont: "Arial", Sans-serif;
-@standardfont: "Arial", Sans-serif;
+@lightBlueDarken20:mix(@lightBlue,#3E3832,80%);
+@lightBlueDarken40:mix(@lightBlue,#3E3832,60%);
+@lightBlueDarken60:mix(@lightBlue,#3E3832,40%);
+@lightBlueDarken80:mix(@lightBlue,#3E3832,20%);
 
+@blueLinkLighten20:lighten(@blueLink, 20%);
+@blueLinkLighten40:lighten(@blueLink, 40%);
+@blueLinkLighten60:lighten(@blueLink, 60%);
+@blueLinkLighten80:lighten(@blueLink, 80%);
 
-/* 
+@blueLinkDarken20:mix(@blueLink,#3E3832,80%);
+@blueLinkDarken40:mix(@blueLink,#3E3832,60%);
+@blueLinkDarken60:mix(@blueLink,#3E3832,40%);
+@blueLinkDarken80:mix(@blueLink,#3E3832,20%);
+
+@blueLinkActiveLighten20:lighten(@blueLinkActive, 20%);
+@blueLinkActiveLighten40:lighten(@blueLinkActive, 40%);
+@blueLinkActiveLighten60:lighten(@blueLinkActive, 60%);
+@blueLinkActiveLighten80:lighten(@blueLinkActive, 80%);
+
+@blueLinkActiveDarken20:mix(@blueLinkActive,#3E3832,80%);
+@blueLinkActiveDarken40:mix(@blueLinkActive,#3E3832,60%);
+@blueLinkActiveDarken60:mix(@blueLinkActive,#3E3832,40%);
+@blueLinkActiveDarken80:mix(@blueLinkActive,#3E3832,20%);
+
+@blueLinkVisitedLighten20:lighten(@blueLinkVisited,20%);
+@blueLinkVisitedLighten40:lighten(@blueLinkVisited,40%);
+@blueLinkVisitedLighten60:lighten(@blueLinkVisited,60%);
+@blueLinkVisitedLighten80:lighten(@blueLinkVisited,80%);
+
+@blueLinkVisitedDarken20:mix(@blueLinkVisited,#3E3832,80%);
+@blueLinkVisitedDarken40:mix(@blueLinkVisited,#3E3832,60%);
+@blueLinkVisitedDarken60:mix(@blueLinkVisited,#3E3832,40%);
+@blueLinkVisitedDarken80:mix(@blueLinkVisited,#3E3832,20%);
+
+@redErrorLighten20:lighten(@redError,20%);
+@redErrorLighten40:lighten(@redError,40%);
+@redErrorLighten60:lighten(@redError,60%);
+@redErrorLighten80:lighten(@redError,80%);
+
+@redErrorDarken20:mix(@redError,#3E3832,80%);
+@redErrorDarken40:mix(@redError,#3E3832,60%);
+@redErrorDarken60:mix(@redError,#3E3832,40%);
+@redErrorDarken80:mix(@redError,#3E3832,20%);
+
+@orangeInfoLighten20:lighten(@orangeInfo,20%);
+@orangeInfoLighten40:lighten(@orangeInfo,40%);
+@orangeInfoLighten60:lighten(@orangeInfo,60%);
+@orangeInfoLighten80:lighten(@orangeInfo,80%);
+
+@orangeInfoDarken20:mix(@orangeInfo,#3E3832,80%);
+@orangeInfoDarken40:mix(@orangeInfo,#3E3832,60%);
+@orangeInfoDarken60:mix(@orangeInfo,#3E3832,40%);
+@orangeInfoDarken80:mix(@orangeInfo,#3E3832,20%);
+
+@orangeFocusLighten20:lighten(@orangeFocus,20%);
+@orangeFocusLighten40:lighten(@orangeFocus,40%);
+@orangeFocusLighten60:lighten(@orangeFocus,60%);
+@orangeFocusLighten80:lighten(@orangeFocus,80%);
+
+@orangeFocusDarken20:mix(@orangeFocus,#3E3832,80%);
+@orangeFocusDarken40:mix(@orangeFocus,#3E3832,60%);
+@orangeFocusDarken60:mix(@orangeFocus,#3E3832,40%);
+@orangeFocusDarken80:mix(@orangeFocus,#3E3832,20%);
+/*
 ---------------
 BREKKPUNKTER
 ---------------
 */
 
-@skjermMini: 24em;
+// Small screen / tablet
+//** Deprecated `@screen-sm` as of v3.0.1
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+//** Deprecated `@screen-tablet` as of v3.0.1
+@screen-tablet:              @screen-sm-min;
+
+// Medium screen / desktop
+//** Deprecated `@screen-md` as of v3.0.1
+@screen-md:                  992px;
+@screen-md-min:              @screen-md;
+//** Deprecated `@screen-desktop` as of v3.0.1
+@screen-desktop:             @screen-md-min;
+
+// Large screen / wide desktop
+//** Deprecated `@screen-lg` as of v3.0.1
+@screen-lg:                  1200px;
+@screen-lg-min:              @screen-lg;
+//** Deprecated `@screen-lg-desktop` as of v3.0.1
+@screen-lg-desktop:          @screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+
+/*
+--------------
+CONTAINER
+--------------
+*/
+
+// Small screen / tablet
+@container-tablet:             (720px + @grid-gutter-width);
+//** For `@screen-sm-min` and up.
+@container-sm:                 @container-tablet;
+
+// Medium screen / desktop
+@container-desktop:            (940px + @grid-gutter-width);
+//** For `@screen-md-min` and up.
+@container-md:                 @container-desktop;
+
+// Large screen / wide desktop
+@container-large-desktop:      (1140px + @grid-gutter-width);
+//** For `@screen-lg-min` and up.
+@container-lg:                 @container-large-desktop;
+
+/*
+---------------
+GRID
+---------------
+*/
+
+//** Number of columns in the grid.
+@grid-columns:              12;
+//** Padding between columns. Gets divided in half for the left and right.
+@grid-gutter-width:         30px;
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+@grid-float-breakpoint:     @screen-sm-min;
+//** Point at which the navbar begins collapsing.
+@grid-float-breakpoint-max: (@grid-float-breakpoint - 1);
+
+
+//== Components
+//
+//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+
+@padding-base-vertical:     6px;
+@padding-base-horizontal:   12px;
+
+@padding-large-vertical:    10px;
+@padding-large-horizontal:  16px;
+
+@padding-small-vertical:    5px;
+@padding-small-horizontal:  10px;
+
+@padding-xs-vertical:       1px;
+@padding-xs-horizontal:     5px;
+
+@line-height-large:         1.3333333; // extra decimals for Win 8.1 Chrome
+@line-height-small:         1.5;
+
+@border-radius-base:        4px;
+@border-radius-large:       6px;
+@border-radius-small:       3px;
