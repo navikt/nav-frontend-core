@@ -4,119 +4,107 @@ FARGER
 ---------------
 */
 
-// Hovedfarger
-@white:#FFF;
-@redNav:#C30000;
-@grayBackground:#EFEFEF;
-@grayText:#3E3832;
-@grayIcon:#B7B1A9;
-@grayModia:#333333;
-@grayInactive:#7F756C;
-@pinkErrorBg:#F3E3E3;
+// Navfarger
 
-// Interaksjonsfarger
-@greenSuccess:#06893A;
-@mutedGreen:#A2AD00; // name will change
-@lightBlue:#66CBEC;
-@blueLink:#0067C5;
-@blueLinkActive:#005B82;
-@blueLinkVisited:#634689;
-@redError:#BA3A26;
-@orangeInfo:#FF9100;
-@orangeFocus:#FFBD66;
+@navRed:#C30000;
+@navOransje:#FF9100;
+@navLimeGronn:#A2AD00;
+@navGronn:#06893A;
+@navLilla:#634689;
+@navDypBla:#005B82;
+@navBla:#0067C5;
+@navLysBla:#66CBEC;
+
+//Tekst digitalt
+@navMorkGra:#3E3832;
+@navGra80:#59514B;
+@navGra60:#78706A;
+@navGra40:#B7B1A9;
+@navGra20:#C6C2BF;
+@navLysGra:#e9e7e7;
 
 // Tilleggsfarger
 // Går mot +#FFF respektive +#3E3832 i inkrement av 20%
-@greenSuccessLighten20:lighten(@greenSuccess, 20%);
-@greenSuccessLighten40:lighten(@greenSuccess, 40%);
-@greenSuccessLighten60:lighten(@greenSuccess, 60%);
-@greenSuccessLighten80:lighten(@greenSuccess, 80%);
+@navGronnLighten20:lighten(@navGronn, 20%);
+@navGronnLighten40:lighten(@navGronn, 40%);
+@navGronnLighten60:lighten(@navGronn, 60%);
+@navGronnLighten80:lighten(@navGronn, 80%);
 
-@greenSuccessDarken20:mix(@greenSuccess,#3E3832,80%);
-@greenSuccessDarken40:mix(@greenSuccess,#3E3832,60%);
-@greenSuccessDarken60:mix(@greenSuccess,#3E3832,40%);
-@greenSuccessDarken80:mix(@greenSuccess,#3E3832,20%);
+@navGronnDarken20:mix(@navGronn,#3E3832,80%);
+@navGronnDarken40:mix(@navGronn,#3E3832,60%);
+@navGronnDarken60:mix(@navGronn,#3E3832,40%);
+@navGronnDarken80:mix(@navGronn,#3E3832,20%);
 
-// change name!!!
-@mutedGreenLighten20:lighten(@mutedGreen,20%);
-@mutedGreenLighten40:lighten(@mutedGreen,40%);
-@mutedGreenLighten60:lighten(@mutedGreen,60%);
-@mutedGreenLighten80:lighten(@mutedGreen,80%);
-//change name!!!
-@mutedGreenDarken20:mix(@mutedGreen,#3E3832,80%);
-@mutedGreenDarken40:mix(@mutedGreen,#3E3832,60%);
-@mutedGreenDarken60:mix(@mutedGreen,#3E3832,40%);
-@mutedGreenDarken80:mix(@mutedGreen,#3E3832,20%);
+@navLimeGronnLighten20:lighten(@navLimeGronn,20%);
+@navLimeGronnLighten40:lighten(@navLimeGronn,40%);
+@navLimeGronnLighten60:lighten(@navLimeGronn,60%);
+@navLimeGronnLighten80:lighten(@navLimeGronn,80%);
 
-@lightBlueLighten20:lighten(@lightBlue,20%);
-@lightBlueLighten40:lighten(@lightBlue,40%);
-@lightBlueLighten60:lighten(@lightBlue,60%);
-@lightBlueLighten80:lighten(@lightBlue,80%);
+@navLimeGronnDarken20:mix(@navLimeGronn,#3E3832,80%);
+@navLimeGronnDarken40:mix(@navLimeGronn,#3E3832,60%);
+@navLimeGronnDarken60:mix(@navLimeGronn,#3E3832,40%);
+@navLimeGronnDarken80:mix(@navLimeGronn,#3E3832,20%);
 
-@lightBlueDarken20:mix(@lightBlue,#3E3832,80%);
-@lightBlueDarken40:mix(@lightBlue,#3E3832,60%);
-@lightBlueDarken60:mix(@lightBlue,#3E3832,40%);
-@lightBlueDarken80:mix(@lightBlue,#3E3832,20%);
+@navLysBlaLighten20:lighten(@navLysBla,20%);
+@navLysBlaLighten40:lighten(@navLysBla,40%);
+@navLysBlaLighten60:lighten(@navLysBla,60%);
+@navLysBlaLighten80:lighten(@navLysBla,80%);
 
-@blueLinkLighten20:lighten(@blueLink, 20%);
-@blueLinkLighten40:lighten(@blueLink, 40%);
-@blueLinkLighten60:lighten(@blueLink, 60%);
-@blueLinkLighten80:lighten(@blueLink, 80%);
+@navLysBlaDarken20:mix(@navLysBla,#3E3832,80%);
+@navLysBlaDarken40:mix(@navLysBla,#3E3832,60%);
+@navLysBlaDarken60:mix(@navLysBla,#3E3832,40%);
+@navLysBlaDarken80:mix(@navLysBla,#3E3832,20%);
 
-@blueLinkDarken20:mix(@blueLink,#3E3832,80%);
-@blueLinkDarken40:mix(@blueLink,#3E3832,60%);
-@blueLinkDarken60:mix(@blueLink,#3E3832,40%);
-@blueLinkDarken80:mix(@blueLink,#3E3832,20%);
+@navBlaLighten20:lighten(@navBla, 20%);
+@navBlaLighten40:lighten(@navBla, 40%);
+@navBlaLighten60:lighten(@navBla, 60%);
+@navBlaLighten80:lighten(@navBla, 80%);
 
-@blueLinkActiveLighten20:lighten(@blueLinkActive, 20%);
-@blueLinkActiveLighten40:lighten(@blueLinkActive, 40%);
-@blueLinkActiveLighten60:lighten(@blueLinkActive, 60%);
-@blueLinkActiveLighten80:lighten(@blueLinkActive, 80%);
+@navBlaDarken20:mix(@navBla,#3E3832,80%);
+@navBlaDarken40:mix(@navBla,#3E3832,60%);
+@navBlaDarken60:mix(@navBla,#3E3832,40%);
+@navBlaDarken80:mix(@navBla,#3E3832,20%);
 
-@blueLinkActiveDarken20:mix(@blueLinkActive,#3E3832,80%);
-@blueLinkActiveDarken40:mix(@blueLinkActive,#3E3832,60%);
-@blueLinkActiveDarken60:mix(@blueLinkActive,#3E3832,40%);
-@blueLinkActiveDarken80:mix(@blueLinkActive,#3E3832,20%);
+@navDypBlaLighten20:lighten(@navDypBla, 20%);
+@navDypBlaLighten40:lighten(@navDypBla, 40%);
+@navDypBlaLighten60:lighten(@navDypBla, 60%);
+@navDypBlaLighten80:lighten(@navDypBla, 80%);
 
-@blueLinkVisitedLighten20:lighten(@blueLinkVisited,20%);
-@blueLinkVisitedLighten40:lighten(@blueLinkVisited,40%);
-@blueLinkVisitedLighten60:lighten(@blueLinkVisited,60%);
-@blueLinkVisitedLighten80:lighten(@blueLinkVisited,80%);
+@navDypBlaDarken20:mix(@navDypBla,#3E3832,80%);
+@navDypBlaDarken40:mix(@navDypBla,#3E3832,60%);
+@navDypBlaDarken60:mix(@navDypBla,#3E3832,40%);
+@navDypBlaDarken80:mix(@navDypBla,#3E3832,20%);
 
-@blueLinkVisitedDarken20:mix(@blueLinkVisited,#3E3832,80%);
-@blueLinkVisitedDarken40:mix(@blueLinkVisited,#3E3832,60%);
-@blueLinkVisitedDarken60:mix(@blueLinkVisited,#3E3832,40%);
-@blueLinkVisitedDarken80:mix(@blueLinkVisited,#3E3832,20%);
+@navLillaLighten20:lighten(@navLilla,20%);
+@navLillaLighten40:lighten(@navLilla,40%);
+@navLillaLighten60:lighten(@navLilla,60%);
+@navLillaLighten80:lighten(@navLilla,80%);
 
-@redErrorLighten20:lighten(@redError,20%);
-@redErrorLighten40:lighten(@redError,40%);
-@redErrorLighten60:lighten(@redError,60%);
-@redErrorLighten80:lighten(@redError,80%);
+@navLillaDarken20:mix(@navLilla,#3E3832,80%);
+@navLillaDarken40:mix(@navLilla,#3E3832,60%);
+@navLillaDarken60:mix(@navLilla,#3E3832,40%);
+@navLillaDarken80:mix(@navLilla,#3E3832,20%);
 
-@redErrorDarken20:mix(@redError,#3E3832,80%);
-@redErrorDarken40:mix(@redError,#3E3832,60%);
-@redErrorDarken60:mix(@redError,#3E3832,40%);
-@redErrorDarken80:mix(@redError,#3E3832,20%);
+@navRedLighten20:lighten(@navRed,20%);
+@navRedLighten40:lighten(@navRed,40%);
+@navRedLighten60:lighten(@navRed,60%);
+@navRedLighten80:lighten(@navRed,80%);
 
-@orangeInfoLighten20:lighten(@orangeInfo,20%);
-@orangeInfoLighten40:lighten(@orangeInfo,40%);
-@orangeInfoLighten60:lighten(@orangeInfo,60%);
-@orangeInfoLighten80:lighten(@orangeInfo,80%);
+@navRedDarken20:mix(@navRed,#3E3832,80%);
+@navRedDarken40:mix(@navRed,#3E3832,60%);
+@navRedDarken60:mix(@navRed,#3E3832,40%);
+@navRedDarken80:mix(@navRed,#3E3832,20%);
 
-@orangeInfoDarken20:mix(@orangeInfo,#3E3832,80%);
-@orangeInfoDarken40:mix(@orangeInfo,#3E3832,60%);
-@orangeInfoDarken60:mix(@orangeInfo,#3E3832,40%);
-@orangeInfoDarken80:mix(@orangeInfo,#3E3832,20%);
+@navOransjeLighten20:lighten(@navOransje,20%);
+@navOransjeLighten40:lighten(@navOransje,40%);
+@navOransjeLighten60:lighten(@navOransje,60%);
+@navOransjeLighten80:lighten(@navOransje,80%);
 
-@orangeFocusLighten20:lighten(@orangeFocus,20%);
-@orangeFocusLighten40:lighten(@orangeFocus,40%);
-@orangeFocusLighten60:lighten(@orangeFocus,60%);
-@orangeFocusLighten80:lighten(@orangeFocus,80%);
+@navOransjeDarken20:mix(@navOransje,#3E3832,80%);
+@navOransjeDarken40:mix(@navOransje,#3E3832,60%);
+@navOransjeDarken60:mix(@navOransje,#3E3832,40%);
+@navOransjeDarken80:mix(@navOransje,#3E3832,20%);
 
-@orangeFocusDarken20:mix(@orangeFocus,#3E3832,80%);
-@orangeFocusDarken40:mix(@orangeFocus,#3E3832,60%);
-@orangeFocusDarken60:mix(@orangeFocus,#3E3832,40%);
-@orangeFocusDarken80:mix(@orangeFocus,#3E3832,20%);
 /*
 ---------------
 BREKKPUNKTER
