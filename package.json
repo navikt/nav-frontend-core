@@ -12,8 +12,8 @@
     "test": "lessc eksempel.less > eksempel.css",
     "start": "title nav-frontend-core && webpack-dev-server --open"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "NAV",
+  "license": "MIT",
   "devDependencies": {
     "css-loader": "0.26.0",
     "express": "4.14.0",
