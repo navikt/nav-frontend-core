@@ -1,22 +1,25 @@
 {
   "name": "nav-frontend-core",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "",
   "files": [
-    "/less", 
+    "/less",
     "index.html",
     "eksempel.less",
     "index.js"
   ],
   "scripts": {
     "test": "lessc eksempel.less > eksempel.css",
-    "start": "title nav-frontend-core && webpack-dev-server --open"
+    "start": "title nav-frontend-core && webpack-dev-server --open",
+    "lerna": "lerna",
+    "CI:lerna:publish": "lerna publish --exact --cd-version patch --yes --skip-temp-tag"
   },
   "author": "NAV",
   "license": "MIT",
   "devDependencies": {
     "css-loader": "0.26.0",
     "express": "4.14.0",
+    "lerna-waiting-on-pull-607": "2.0.0-beta.38-waiting.5",
     "less": "2.7.1",
     "less-loader": "2.2.3",
     "path": "0.12.7",
