@@ -1,0 +1,6 @@
+machine:
+  timezone: Europe/Oslo
+
+dependencies:
+  override:
+    - npm install
