@@ -1,6 +1,17 @@
 machine:
   timezone: Europe/Oslo
+  node:
+    version: 5.1.1
 
 dependencies:
+  pre:
+    - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
   override:
     - npm install
+    - npm publish
+
+general:
+  branches:
+    only:
+      - master
+      - build-in-circle-CI
