@@ -14,4 +14,3 @@ general:
   branches:
     only:
       - master
-      - build-in-circle-CI
