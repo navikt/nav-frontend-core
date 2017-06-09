@@ -8,7 +8,12 @@ dependencies:
     - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
   override:
     - npm install
-    - npm publish
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - npm publish
 
 general:
   branches:
