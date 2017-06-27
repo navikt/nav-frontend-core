@@ -13,6 +13,9 @@ deployment:
   production:
     branch: master
     commands:
+      - npm version patch -m "Publish %s [ci skip]"
+      - git push origin master
+      - git push origin master --tags
       - npm publish
 
 general:
