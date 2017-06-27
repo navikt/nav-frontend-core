@@ -13,11 +13,6 @@ deployment:
   production:
     branch: master
     commands:
-      - git config --global user.email "erlend.edvardsen.vige@nav.no"
-      - git config --global user.name "navikt"
-      - npm version patch -m "Publish %s [ci skip]"
-      - git push origin master
-      - git push origin master --tags
       - npm publish
 
 general:
