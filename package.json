@@ -1,9 +1,9 @@
 {
   "name": "nav-frontend-core",
-  "version": "3.1.0",
+  "version": "4.0.4",
   "description": "",
   "files": [
-    "/less", 
+    "/less",
     "index.html",
     "eksempel.less",
     "index.js"
