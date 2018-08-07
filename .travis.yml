@@ -1,0 +1,20 @@
+language: node_js
+node_js: 
+  - "5.1.1"
+
+before_install: 
+  - export TZ=Europe/Oslo
+
+install:
+  - npm install
+
+before_deploy:
+  - git config --global user.email "eirik@archivedworks.com"
+  - git config --global user.name "navikt"
+
+deploy:
+  provider: npm
+  email: "eirik@archivedworks.com"
+  api_key: $NPM_TOKEN
+  on:
+    branch: master
