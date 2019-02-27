@@ -1,27 +1,5 @@
-# NAV-frontend-core
+# DEPRECATED
 
-Variabler og andre felleselementer for NAV-frontend. 
+Dette repoet er stengt og blir ikke vedlikeholdt.
 
-For å kjøre
-
-```
-npm install
-npm run start
-```
-
-
-### Disclaimer:
-NPM-pakken(e) publisert av NAV IT er midlertidig unscoped'e, 
-men vil bli prefikset og scopet med @navikt i fremtiden. Vi 
-gjør oppmerksom på at npm-pakkene i følgende lenke, 
-og *kun* disse npm-pakkene, er forvaltet og publisert offisielt av NAV IT:
-
-https://www.npmjs.com/org/navikt
-
-Oppdatert liste over gyldige pakker ligger til enhver tid beskrevet her.
-
-NAV IT tar ikke ansvar for eventuell bruk av annen programvare som 
-fremstilles som om de skulle vært publisert av NAV.
-
-Vi refererer ellers til MIT-lisensen som ligger vedlagt i repository:
-https://github.com/navikt/nav-frontend-core/blob/master/LICENSE
+Kildekoden for NPM-pakken [`nav-frontend-core`](https://www.npmjs.com/package/nav-frontend-core) er flyttet inn under [`nav-frontend-moduler`](https://github.com/navikt/nav-frontend-moduler) og blir videreutviklet og vedlikeholdt der.
